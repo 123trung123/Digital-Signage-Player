@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  animation: animatedBackground 10s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.title-icon {
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.container {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.title-container h1 {
+  font-size: 2em;
+  color: #333;
+  margin: 0;
+  background-color: #acb6e5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title-container .separator {
+  width: 50px;
+  height: 4px;
+  background-color: #0446aa;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border 0.3s;
+}
+
+.input:focus {
+  border-color: #0446aa;
+  outline: none;
+}
+
+.button {
+  background-color: #0446aa;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #033b90;
+  transform: translateY(-2px);
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .input, .button {
+    padding: 12px;
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  animation: animatedBackground 10s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.app-container {
+  text-align: center;
+  width: 100%;
+}
+
+.nav-link-container {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  background: blue;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
